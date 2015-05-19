@@ -7,8 +7,8 @@ import java.util.List;
 public abstract class Piece {
 	List<Block> blockList = new ArrayList<Block>();
 	 Color color;
-	 int x = 10;
-	 int y = 10;
+	 int x;
+	 int y;
 	public Piece(Player p){
 		color = p.getColor();
 	}
@@ -37,4 +37,16 @@ public abstract class Piece {
 		}
 	}
 	
+	public int getX(){
+		return x;
+	}
+	
+	public int getY(){
+		return y;
+	}
+	
+	public void setLoc(int xx, int yy){
+		x = xx;
+		y = yy;
+	}
 }

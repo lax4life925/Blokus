@@ -24,7 +24,25 @@ public class BlokusPanel extends JPanel{
 	private void test(Graphics g) {
 		// TODO Auto-generated method stub
 		Piece p = new ThreeLong(new Player(Color.RED));
+		p.setLoc(50, 50);
 		p.draw(g);
+		Piece p2 = new Corner(new Player(Color.red));
+		p2.setLoc(100, 100);
+		p2.draw(g);
+	}
+
+
+
+	public void grabPiece(int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	public boolean insideUsablePiece(int x, int y) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 
